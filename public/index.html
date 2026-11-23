@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Creatine Monohydrate Powder — Bulk Maroc</title>
+  <meta name="description" content="Créatine monohydrate Bulk, sachet de 500 g en Unflavoured, Vanille ou Mixed Berry. 399 DH. Paiement à la livraison au Maroc." />
+  <meta name="theme-color" content="#eef5db" />
+  <link rel="icon" type="image/png" href="assets/images/bulk-logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Scoutie+Sans:wght@400;500;600;700;800&family=Courier+Prime:wght@400;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css?v=18" />
+</head>
+<body>
+  <a class="skip-link" href="#commander" data-i18n="tkHead">Bon de commande</a>
+
+  <!-- ================= BANDEAU + HEADER ================= -->
+  <p class="promo" data-i18n="promo">Paiement à la livraison · Livraison partout au Maroc</p>
+  <header class="site-header" id="site-header">
+    <!-- LOGO : public/assets/images/bulk-logo.png -->
+    <a href="#produit" class="brand" aria-label="Bulk">
+      <img src="assets/images/bulk-logo.png" alt="Bulk" width="939" height="475" />
+    </a>
+    <div class="header-actions">
+      <button type="button" class="lang-btn" id="lang-btn" lang="ar" data-i18n="langSwitch" data-i18n-aria="langSwitchLabel" aria-label="Afficher la page en arabe">ع</button>
+      <button type="button" class="icon-btn" id="share-btn" data-i18n-aria="share" aria-label="Partager">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 15V3M7.5 7.5 12 3l4.5 4.5M5 12v8h14v-8" /></svg>
+      </button>
+    </div>
+    <span class="toast" id="toast" role="status" hidden></span>
+  </header>
+
+  <main id="produit">
+    <div class="shop">
+
+      <!-- ================= GALERIE ================= -->
+      <section class="gallery" data-i18n-aria="galleryLabel" aria-label="Photos du produit">
+        <span class="gallery-coral" aria-hidden="true"></span>
+        <span class="gallery-tan" aria-hidden="true"></span>
+        <div class="slides" id="slides" tabindex="0">
+          <figure class="slide" data-slide="vanilla"><img src="assets/images/creatine-bulk-vanille.jpg?v=2" alt="Sachet Bulk Creatine Monohydrate Vanille" width="1200" height="1200" fetchpriority="high" /></figure>
+          <figure class="slide" data-slide="mixedBerry"><img src="assets/images/creatine-bulk-mixed-berry.jpg?v=2" alt="Sachet Bulk Creatine Monohydrate Mixed Berry" width="1200" height="1200" loading="lazy" /></figure>
+          <figure class="slide" data-slide="unflavored"><img src="assets/images/creatine-bulk-sans-gout.jpg?v=2" alt="Sachet Bulk Creatine Monohydrate Unflavoured" width="1200" height="1200" loading="lazy" /></figure>
+          <figure class="slide" data-slide="all"><img src="assets/images/bulk-flatlay-all-flavors.png" alt="Les trois sachets Bulk : Unflavoured, Vanille et Mixed Berry" width="768" height="1376" loading="lazy" /></figure>
+        </div>
+        <div class="dots" id="dots">
+          <button type="button" class="dot" data-go="0" aria-label="Photo 1"></button>
+          <button type="button" class="dot" data-go="1" aria-label="Photo 2"></button>
+          <button type="button" class="dot" data-go="2" aria-label="Photo 3"></button>
+          <button type="button" class="dot" data-go="3" aria-label="Photo 4"></button>
+        </div>
+        <button type="button" class="arrow arrow-prev" data-step="-1" aria-label="Photo précédente"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7" /></svg></button>
+        <button type="button" class="arrow arrow-next" data-step="1" aria-label="Photo suivante"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7" /></svg></button>
+      </section>
+
+      <!-- ================= PRODUIT ================= -->
+      <section class="info">
+        <p class="kicker" data-i18n="kicker">Bulk · Nutrition sportive</p>
+        <h1 class="title" data-i18n="title">Creatine Monohydrate Powder</h1>
+        <!-- POINTS CLÉS : textes dans public/i18n.js (clé highlights) -->
+        <ul class="highlights" data-i18n-html="highlights"></ul>
+        <p class="sub" data-i18n="sub">Sachet de 500 g · Unflavoured, Vanille ou Mixed Berry</p>
+        <p class="price-line">
+          <strong class="price" id="hero-price">399 DH</strong>
+          <s class="compare" id="hero-compare">499 DH</s>
+        </p>
+        <ul class="trust">
+          <li><span class="t-dot" aria-hidden="true"></span><span data-i18n="trustCod">Rien à payer avant la livraison</span></li>
+          <li><span class="t-dot" aria-hidden="true"></span><span data-i18n="trustFee">Livré chez vous pour 20 DH</span></li>
+          <li><span class="t-dot" aria-hidden="true"></span><span data-i18n="trustCall">Un appel pour confirmer, sans surprise</span></li>
+        </ul>
+      </section>
+
+      <!-- ================= BON DE COMMANDE (ticket) ================= -->
+      <section class="order" id="commander" aria-labelledby="ticket-title">
+          <div id="order-area">
+            <form id="order-form" novalidate>
+            <!-- Carte 1 : produit (format + goût) -->
+            <div class="ticket">
+              <div class="tk-head">
+                <img src="assets/images/bulk-logo.png" alt="" width="939" height="475" />
+                <h2 class="tk-title" id="ticket-title"><span data-i18n="tkHead">BON DE COMMANDE</span> — <span data-i18n="tkProduct">CREATINE MONOHYDRATE POWDER</span></h2>
+              </div>
+
+              <!-- 1. Format (sélecteur Uiverse adapté, voir .seg dans style.css) -->
+              <fieldset class="tk-sec">
+                <legend class="tk-label" data-i18n="tkPack">1. FORMAT</legend>
+                <div class="seg seg--pack" id="packs" style="--n: 3">
+                  <label>
+                    <input type="radio" name="pack" value="single" checked />
+                    <span class="seg-two"><b data-i18n="w500">500 g</b><small data-price="single">399 DH</small></span>
+                  </label>
+                  <label>
+                    <input type="radio" name="pack" value="double" />
+                    <span class="seg-two"><b data-i18n="w1000">1 kg</b><small data-price="double">749 DH</small></span>
+                  </label>
+                  <label>
+                    <input type="radio" name="pack" value="mix" />
+                    <span class="seg-two"><b data-i18n="wMix">Mix</b><small data-i18n="mixSub">jusqu'à 10 sachets</small></span>
+                  </label>
+                  <span class="selection" aria-hidden="true"></span>
+                </div>
+                <p class="tk-hint" id="per-unit"></p>
+                <p class="error" data-error-for="pack"></p>
+              </fieldset>
+
+              <!-- 2. Goût : un sélecteur par sachet (le 2e apparaît avec le format 1 kg) -->
+              <fieldset class="tk-sec" id="flavor-sec">
+                <legend class="tk-label" id="flavor-legend" data-i18n="tkFlavor">2. GOÛT</legend>
+                <div class="flavor-slot">
+                  <p class="slot-label" id="slot1-label" data-i18n="sachet1" hidden>Sachet 1</p>
+                  <div class="seg seg--flavor" id="flavors" style="--n: 3" role="radiogroup">
+                    <label>
+                      <input type="radio" name="flavor" value="unflavored" />
+                      <span data-i18n="flPlain">Unflavoured</span>
+                    </label>
+                    <label>
+                      <input type="radio" name="flavor" value="vanilla" />
+                      <span data-i18n="flVanilla">Vanille</span>
+                    </label>
+                    <label>
+                      <input type="radio" name="flavor" value="mixedBerry" />
+                      <span data-i18n="flBerry">Mixed Berry</span>
+                    </label>
+                    <span class="selection" aria-hidden="true"></span>
+                  </div>
+                  <p class="error" data-error-for="flavor"></p>
+                </div>
+                <div class="flavor-slot" id="slot2" hidden>
+                  <p class="slot-label" data-i18n="sachet2">Sachet 2</p>
+                  <div class="seg seg--flavor" id="flavors2" style="--n: 3" role="radiogroup">
+                    <label>
+                      <input type="radio" name="flavor2" value="unflavored" />
+                      <span data-i18n="flPlain">Unflavoured</span>
+                    </label>
+                    <label>
+                      <input type="radio" name="flavor2" value="vanilla" />
+                      <span data-i18n="flVanilla">Vanille</span>
+                    </label>
+                    <label>
+                      <input type="radio" name="flavor2" value="mixedBerry" />
+                      <span data-i18n="flBerry">Mixed Berry</span>
+                    </label>
+                    <span class="selection" aria-hidden="true"></span>
+                  </div>
+                  <p class="error" data-error-for="flavor2"></p>
+                </div>
+              </fieldset>
+
+              <!-- 2 bis. Mix : nombre de sachets par goût (format « Mix ») -->
+              <fieldset class="tk-sec" id="mix-sec" hidden>
+                <legend class="tk-label" data-i18n="tkMix">2. COMPOSEZ VOTRE MIX</legend>
+                <p class="mix-hint" data-i18n="mixHint">Choisissez combien de sachets de chaque goût.</p>
+                <ul class="mix" id="mix">
+                  <li class="mix-row" data-flavor="unflavored">
+                    <span class="mix-name"><span class="mix-dot" aria-hidden="true"></span><span data-i18n="flPlain">Unflavoured</span></span>
+                    <span class="stepper">
+                      <button type="button" class="step-btn" data-step="-1" aria-label="−">−</button>
+                      <output class="step-val" aria-live="polite">0</output>
+                      <button type="button" class="step-btn" data-step="1" aria-label="+">+</button>
+                    </span>
+                  </li>
+                  <li class="mix-row" data-flavor="vanilla">
+                    <span class="mix-name"><span class="mix-dot" aria-hidden="true"></span><span data-i18n="flVanilla">Vanille</span></span>
+                    <span class="stepper">
+                      <button type="button" class="step-btn" data-step="-1" aria-label="−">−</button>
+                      <output class="step-val" aria-live="polite">0</output>
+                      <button type="button" class="step-btn" data-step="1" aria-label="+">+</button>
+                    </span>
+                  </li>
+                  <li class="mix-row" data-flavor="mixedBerry">
+                    <span class="mix-name"><span class="mix-dot" aria-hidden="true"></span><span data-i18n="flBerry">Mixed Berry</span></span>
+                    <span class="stepper">
+                      <button type="button" class="step-btn" data-step="-1" aria-label="−">−</button>
+                      <output class="step-val" aria-live="polite">0</output>
+                      <button type="button" class="step-btn" data-step="1" aria-label="+">+</button>
+                    </span>
+                  </li>
+                </ul>
+                <p class="mix-sum" id="mix-sum"></p>
+                <p class="error" data-error-for="mix"></p>
+              </fieldset>
+            </div>
+
+            <!-- Carte 2 : coordonnées + total + bouton -->
+            <div class="ticket ticket--info">
+              <!-- 3. Coordonnées -->
+              <fieldset class="tk-sec">
+                <legend class="tk-label" data-i18n="tkInfo">3. VOS COORDONNÉES</legend>
+                <div class="field">
+                  <label for="full_name" data-i18n="nameLabel">Nom complet</label>
+                  <input type="text" id="full_name" name="full_name" data-i18n-placeholder="namePh" placeholder="Ex. : Yassine El Amrani" autocomplete="name" maxlength="80" aria-describedby="err-fullName" />
+                  <p class="error" id="err-fullName" data-error-for="fullName"></p>
+                </div>
+                <div class="field">
+                  <label for="phone" data-i18n="phoneLabel">Téléphone</label>
+                  <input type="tel" id="phone" name="phone" placeholder="06 00 00 00 00" autocomplete="tel" inputmode="tel" maxlength="20" dir="ltr" aria-describedby="err-phone" />
+                  <p class="error" id="err-phone" data-error-for="phone"></p>
+                </div>
+                <div class="field">
+                  <label for="address" data-i18n="addressLabel">Adresse</label>
+                  <textarea id="address" name="address" rows="2" data-i18n-placeholder="addressPh" placeholder="Rue, quartier, immeuble, ville" autocomplete="street-address" maxlength="300" aria-describedby="err-address"></textarea>
+                  <p class="error" id="err-address" data-error-for="address"></p>
+                </div>
+              </fieldset>
+
+              <!-- Lignes du ticket -->
+              <div class="tk-lines" aria-live="polite">
+                <div class="tk-row"><span id="tk-item">—</span><span id="tk-sub">399 DH</span></div>
+                <div class="tk-row"><span data-i18n="sumDelivery">Livraison</span><span id="tk-fee">20 DH</span></div>
+                <div class="tk-total"><span data-i18n="tkTotal">TOTAL</span><b id="tk-total">419 DH</b></div>
+                <p class="tk-paynow" data-i18n="payNow">Rien à payer maintenant.</p>
+              </div>
+
+              <p class="form-status" id="form-status" role="alert" hidden></p>
+
+              <button type="submit" class="bulk-action-button order-btn" id="submit-btn">
+                <span class="btn-label" data-i18n="orderBtn">Commander maintenant</span>
+                <svg class="bulk-action-button__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path clip-rule="evenodd" fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"></path></svg>
+              </button>
+              <p class="fine" data-i18n="callNote">Nous vous appelons pour confirmer avant l'envoi.</p>
+            </div>
+            </form>
+          </div>
+
+          <!-- Confirmation (dans un ticket) -->
+          <div class="ticket success" id="success" tabindex="-1" hidden>
+            <span class="ok-mark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" /></svg></span>
+            <p class="ok-title" data-i18n="okTitle">Commande reçue, merci !</p>
+            <p class="ok-text" data-i18n="okText"></p>
+            <div class="tk-lines">
+              <div class="tk-row"><span data-i18n="okNumber">N° de commande</span><span id="ok-id">—</span></div>
+              <div class="tk-row"><span id="ok-item">—</span><span id="ok-sub">—</span></div>
+              <div class="tk-row"><span data-i18n="sumDelivery">Livraison</span><span id="ok-fee">—</span></div>
+              <div class="tk-total"><span data-i18n="tkTotal">TOTAL</span><b id="ok-total">—</b></div>
+              <p class="tk-paynow" data-i18n="sumCod">Paiement à la livraison</p>
+            </div>
+            <button type="button" class="ghost-btn" id="new-order" data-i18n="okNew">Passer une autre commande</button>
+          </div>
+      </section>
+    </div>
+
+    <!-- ================= AVIS (vrais avis, texte d'origine) ================= -->
+    <!-- ================= INFORMATIONS PRODUIT (inspiré de bulk.com) ================= -->
+    <!-- Contenus FR/AR dans public/i18n.js (clés accDesc, accUse, accIngr, accNutri, accFaq) -->
+    <section class="details" aria-label="Informations produit">
+      <div class="accordions">
+        <div class="acc">
+          <h2><button type="button" class="acc-btn" aria-expanded="false" aria-controls="acc-1" id="acc-1-btn"><span data-i18n="accDescTitle">Description</span><span class="acc-icon" aria-hidden="true"></span></button></h2>
+          <div class="acc-panel rich" id="acc-1" role="region" aria-labelledby="acc-1-btn" data-i18n-html="accDesc" hidden></div>
+        </div>
+        <div class="acc">
+          <h2><button type="button" class="acc-btn" aria-expanded="false" aria-controls="acc-2" id="acc-2-btn"><span data-i18n="accUseTitle">Quand et comment l'utiliser</span><span class="acc-icon" aria-hidden="true"></span></button></h2>
+          <div class="acc-panel rich" id="acc-2" role="region" aria-labelledby="acc-2-btn" data-i18n-html="accUse" hidden></div>
+        </div>
+        <div class="acc">
+          <h2><button type="button" class="acc-btn" aria-expanded="false" aria-controls="acc-3" id="acc-3-btn"><span data-i18n="accIngrTitle">Ingrédients</span><span class="acc-icon" aria-hidden="true"></span></button></h2>
+          <div class="acc-panel rich" id="acc-3" role="region" aria-labelledby="acc-3-btn" data-i18n-html="accIngr" hidden></div>
+        </div>
+        <div class="acc">
+          <h2><button type="button" class="acc-btn" aria-expanded="false" aria-controls="acc-4" id="acc-4-btn"><span data-i18n="accNutriTitle">Valeurs nutritionnelles</span><span class="acc-icon" aria-hidden="true"></span></button></h2>
+          <div class="acc-panel rich" id="acc-4" role="region" aria-labelledby="acc-4-btn" data-i18n-html="accNutri" hidden></div>
+        </div>
+        <div class="acc">
+          <h2><button type="button" class="acc-btn" aria-expanded="false" aria-controls="acc-5" id="acc-5-btn"><span data-i18n="accFaqTitle">FAQs</span><span class="acc-icon" aria-hidden="true"></span></button></h2>
+          <div class="acc-panel rich" id="acc-5" role="region" aria-labelledby="acc-5-btn" data-i18n-html="accFaq" hidden></div>
+        </div>
+        <div class="acc">
+          <!-- Avis : toujours ouverts (pas de bouton pour les replier) -->
+          <h2 class="acc-btn acc-btn--static" id="acc-6-btn"><span data-i18n="accReviewsTitle">Avis</span></h2>
+          <div class="acc-panel" id="acc-6" role="region" aria-labelledby="acc-6-btn">
+      <p class="section-sub" data-i18n="reviewsSub"></p>
+      <!-- AVIS : vrais avis de clients, repris tels quels depuis l'ancienne boutique YouCan -->
+      <ul class="review-list">
+        <li class="review"><p dir="auto">saraha produit zwin ou ahsan haja li l9it fih hiya anahou lmada9 dyalou l did lwa7ed daraja ta9der tb9a taklha bla mat7bes khousousan ana jerabt les gout b tlata ou lmada9 dyal l vanille wa3r ou hta mn les performances dyali t7esnou 3la 9bl</p><span class="r-name" dir="auto">Ahmed Faris</span></li>
+        <li class="review"><p dir="auto">mn b3d 3 mois ou ana kanakhed fhad l creatine wlit kanchouf rasi wa7ed akher f l'entrainement dyali tzad 3ndi jhed ou wlit kan7es b 7ayawiya ou en plus fach kan kanakhed scoup dyali mab9ach 3ndi l mouchkil ta3 l mada9 kifma kan 3ndi m3a les autres marques dyal les creatine ou kan recomander le goût ta3 l'vanille hitach l did bzaf ou choukran bzaf 3la le service dyalkoum</p><span class="r-name" dir="auto">Marouan El Kadiri</span></li>
+        <li class="review"><p dir="auto">كرياتين زوينة بتمان واعر</p><span class="r-name" dir="auto">soufiane ait ouzzil</span></li>
+        <li class="review"><p dir="auto">merci 3la service, creatine zwina, kima f tsawer katwsl 3ndk</p><span class="r-name" dir="auto">mohamed iziki</span></li>
+        <li class="review"><p dir="auto">creatine monohydrate b taman wa33r, kan recommendih li bgha creatine iyakhod vanille dyalhom</p><span class="r-name" dir="auto">ismail junayd</span></li>
+        <li class="review"><p dir="auto">creatine zwina, 500g bprix zwin, ta7iyati</p><span class="r-name" dir="auto">youssef el morsli</span></li>
+      </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <img src="assets/images/bulk-logo.png" alt="Bulk" width="939" height="475" loading="lazy" />
+    <!-- CONTACT : remplacez le numéro placeholder -->
+    <p><span data-i18n="contact">Une question ?</span> <a href="tel:+212611486991" dir="ltr">06 11 48 69 91</a></p>
+    <p class="copy" data-i18n="copyright">© 2026 Bulk Maroc. Tous droits réservés.</p>
+  </footer>
+
+  <!-- Bouton fixe (mobile) : visible quand le bon de commande n'est pas à l'écran -->
+  <a href="#commander" class="bulk-action-button sticky-cta" id="sticky-cta" aria-hidden="true" tabindex="-1">
+    <span><span data-i18n="stickyBtn">Commander</span> — <span id="sticky-price">419 DH</span></span>
+    <svg class="bulk-action-button__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path clip-rule="evenodd" fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"></path></svg>
+  </a>
+
+  <script src="config.js?v=16"></script>
+  <script src="i18n.js?v=17"></script>
+  <script src="script.js?v=17"></script>
+</body>
+</html>
